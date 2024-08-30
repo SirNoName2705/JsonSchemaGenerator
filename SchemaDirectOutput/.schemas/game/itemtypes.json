@@ -3652,6 +3652,9 @@
     },
     {
       "type": "object"
+    },
+    {
+      "$ref": "./itemtypes-attributes.json#"
     }
   ]
 }

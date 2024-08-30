@@ -3879,6 +3879,9 @@
           }
         }
       }
+    },
+    {
+      "$ref": "./blocktypes-attributes.json#"
     }
   ]
 }
