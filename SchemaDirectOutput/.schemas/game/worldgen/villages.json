@@ -1,0 +1,307 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WorldGenVillageConfig",
+  "type": "object",
+  "properties": {
+    "chanceMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "villageTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/WorldGenVillage"
+      }
+    }
+  },
+  "definitions": {
+    "WorldGenVillage": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string"
+        },
+        "minGroupDistance": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "schematics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/VillageSchematic"
+          }
+        },
+        "chance": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "quantityStructures": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "replaceWithBlocklayers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "buildProtected": {
+          "type": "boolean"
+        },
+        "postPass": {
+          "type": "boolean"
+        },
+        "buildProtectionDesc": {
+          "type": "string"
+        },
+        "buildProtectionName": {
+          "type": "string"
+        },
+        "rockTypeRemaps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "rockTypeRemapGroup": {
+          "type": "string"
+        },
+        "offsetYByCode": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    },
+    "VillageSchematic": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "offsetY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "weight": {
+          "type": "number",
+          "format": "double"
+        },
+        "structures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BlockSchematicStructure"
+          }
+        },
+        "minQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nowQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "shouldGenerate": {
+          "type": "boolean"
+        }
+      }
+    },
+    "BlockSchematicStructure": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/BlockSchematic"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "BlockSchematic": {
+      "type": "object",
+      "properties": {
+        "gameVersion": {
+          "type": "string"
+        },
+        "sizeX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "blockCodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "itemCodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "blockIds": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "decorIndices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "decorIds": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "blockEntities": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replaceMode": {
+          "$ref": "#/definitions/EnumReplaceMode"
+        },
+        "entranceRotation": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "EnumReplaceMode": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Replaceable",
+        "ReplaceAll",
+        "ReplaceAllNoAir",
+        "ReplaceOnlyAir"
+      ],
+      "enum": [
+        "replaceable",
+        "replaceAll",
+        "replaceAllNoAir",
+        "replaceOnlyAir"
+      ]
+    },
+    "NatFloat": {
+      "type": "object",
+      "description": "A more natural random number generator (nature usually doesn't grow by the exact same numbers nor does it completely randomly)",
+      "properties": {
+        "offset": {
+          "type": "number",
+          "format": "float"
+        },
+        "avg": {
+          "type": "number",
+          "format": "float"
+        },
+        "var": {
+          "type": "number",
+          "format": "float"
+        },
+        "dist": {
+          "$ref": "#/definitions/EnumDistribution"
+        }
+      }
+    },
+    "EnumDistribution": {
+      "type": "string",
+      "description": "The distribution of the random numbers ",
+      "x-enumNames": [
+        "UNIFORM",
+        "TRIANGLE",
+        "GAUSSIAN",
+        "NARROWGAUSSIAN",
+        "INVERSEGAUSSIAN",
+        "NARROWINVERSEGAUSSIAN",
+        "INVEXP",
+        "STRONGINVEXP",
+        "STRONGERINVEXP",
+        "DIRAC",
+        "VERYNARROWGAUSSIAN"
+      ],
+      "enum": [
+        "uniform",
+        "triangle",
+        "gaussian",
+        "narrowgaussian",
+        "inversegaussian",
+        "narrowinversegaussian",
+        "invexp",
+        "stronginvexp",
+        "strongerinvexp",
+        "dirac",
+        "verynarrowgaussian"
+      ]
+    }
+  }
+}

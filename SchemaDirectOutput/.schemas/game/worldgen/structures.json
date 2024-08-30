@@ -1,0 +1,531 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WorldGenStructuresConfig",
+  "definitions": {
+    "WorldGenStructure": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/WorldGenStructureBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "group": {
+              "type": "string"
+            },
+            "minGroupDistance": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "chance": {
+              "type": "number",
+              "format": "float"
+            },
+            "minTemp": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "maxTemp": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minRain": {
+              "type": "number",
+              "format": "float"
+            },
+            "maxRain": {
+              "type": "number",
+              "format": "float"
+            },
+            "minForest": {
+              "type": "number",
+              "format": "float"
+            },
+            "maxForest": {
+              "type": "number",
+              "format": "float"
+            },
+            "minY": {
+              "type": "number",
+              "format": "float"
+            },
+            "maxY": {
+              "type": "number",
+              "format": "float"
+            },
+            "offsetX": {
+              "$ref": "#/definitions/NatFloat"
+            },
+            "offsetY": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "format": "int32"
+            },
+            "offsetZ": {
+              "$ref": "#/definitions/NatFloat"
+            },
+            "blockCodeIndex": {
+              "$ref": "#/definitions/NatFloat"
+            },
+            "replaceWithBlocklayers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "postPass": {
+              "type": "boolean"
+            },
+            "suppressTrees": {
+              "type": "boolean"
+            },
+            "suppressWaterfalls": {
+              "type": "boolean"
+            },
+            "lastPlacedSchematicLocation": {
+              "$ref": "#/definitions/Cuboidi"
+            },
+            "lastPlacedSchematic": {
+              "$ref": "#/definitions/BlockSchematicStructure"
+            }
+          }
+        }
+      ]
+    },
+    "NatFloat": {
+      "type": "object",
+      "description": "A more natural random number generator (nature usually doesn't grow by the exact same numbers nor does it completely randomly)",
+      "properties": {
+        "offset": {
+          "type": "number",
+          "format": "float"
+        },
+        "avg": {
+          "type": "number",
+          "format": "float"
+        },
+        "var": {
+          "type": "number",
+          "format": "float"
+        },
+        "dist": {
+          "$ref": "#/definitions/EnumDistribution"
+        }
+      }
+    },
+    "EnumDistribution": {
+      "type": "string",
+      "description": "The distribution of the random numbers ",
+      "x-enumNames": [
+        "UNIFORM",
+        "TRIANGLE",
+        "GAUSSIAN",
+        "NARROWGAUSSIAN",
+        "INVERSEGAUSSIAN",
+        "NARROWINVERSEGAUSSIAN",
+        "INVEXP",
+        "STRONGINVEXP",
+        "STRONGERINVEXP",
+        "DIRAC",
+        "VERYNARROWGAUSSIAN"
+      ],
+      "enum": [
+        "uniform",
+        "triangle",
+        "gaussian",
+        "narrowgaussian",
+        "inversegaussian",
+        "narrowinversegaussian",
+        "invexp",
+        "stronginvexp",
+        "strongerinvexp",
+        "dirac",
+        "verynarrowgaussian"
+      ]
+    },
+    "Cuboidi": {
+      "type": "object",
+      "properties": {
+        "x1": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "y1": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "z1": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "x2": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "y2": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "z2": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "minX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeXYZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeXZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "start": {
+          "$ref": "#/definitions/Vec3i"
+        },
+        "end": {
+          "$ref": "#/definitions/Vec3i"
+        },
+        "center": {
+          "$ref": "#/definitions/Vec3i"
+        },
+        "centerX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "centerY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "centerZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "volume": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Vec3i": {
+      "type": "object",
+      "description": "Represents a vector of 3 ints. Go bug Tyron if you need more utility methods in this class.",
+      "properties": {
+        "x": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "y": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "z": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "BlockSchematicStructure": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/BlockSchematic"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "BlockSchematic": {
+      "type": "object",
+      "properties": {
+        "gameVersion": {
+          "type": "string"
+        },
+        "sizeX": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "sizeZ": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "blockCodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "itemCodes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "indices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "blockIds": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "decorIndices": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "decorIds": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "blockEntities": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "replaceMode": {
+          "$ref": "#/definitions/EnumReplaceMode"
+        },
+        "entranceRotation": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "EnumReplaceMode": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Replaceable",
+        "ReplaceAll",
+        "ReplaceAllNoAir",
+        "ReplaceOnlyAir"
+      ],
+      "enum": [
+        "replaceable",
+        "replaceAll",
+        "replaceAllNoAir",
+        "replaceOnlyAir"
+      ]
+    },
+    "WorldGenStructureBase": {
+      "type": "object",
+      "x-abstract": true,
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "schematics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "placement": {
+          "$ref": "#/definitions/EnumStructurePlacement"
+        },
+        "depth": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "quantity": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "buildProtected": {
+          "type": "boolean"
+        },
+        "buildProtectionDesc": {
+          "type": "string"
+        },
+        "buildProtectionName": {
+          "type": "string"
+        },
+        "rockTypeRemapGroup": {
+          "type": "string"
+        },
+        "rockTypeRemaps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "insideBlockCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origin": {
+          "$ref": "#/definitions/EnumOrigin"
+        },
+        "offsetYByCode": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    },
+    "EnumStructurePlacement": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "SurfaceRuin",
+        "Surface",
+        "Underwater",
+        "Underground"
+      ],
+      "enum": [
+        "surfaceRuin",
+        "surface",
+        "underwater",
+        "underground"
+      ]
+    },
+    "EnumOrigin": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "StartPos",
+        "BottomCenter",
+        "TopCenter",
+        "MiddleCenter"
+      ],
+      "enum": [
+        "startPos",
+        "bottomCenter",
+        "topCenter",
+        "middleCenter"
+      ]
+    },
+    "WorldGenStructuresConfigBase": {
+      "type": "object",
+      "properties": {
+        "rocktypeRemapGroups": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        },
+        "schematicYOffsets": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "resolvedRocktypeRemapGroups": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/WorldGenStructuresConfigBase"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "chanceMultiplier": {
+          "type": "number",
+          "format": "float"
+        },
+        "structures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/WorldGenStructure"
+          }
+        },
+        "loadedSchematicsCache": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/BlockSchematicStructure"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

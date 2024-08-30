@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json.schemastore.org/schema-catalog.json",
+  "version": 1.0,
+  "schemas": [
+    {
+      "name": "modinfo.json",
+      "description": "",
+      "fileMatch": [
+        "**/modinfo.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/modinfo.json"
+    },
+    {
+      "name": "blocktypes.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/blocktypes/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/blocktypes.json"
+    },
+    {
+      "name": "handbook.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/handbook/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/handbook.json"
+    },
+    {
+      "name": "lore.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/lore/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/lore.json"
+    },
+    {
+      "name": "weatherevents.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/weatherevents/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weatherevents.json"
+    },
+    {
+      "name": "weatherpatterns.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/weatherpatterns/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weatherpatterns.json"
+    },
+    {
+      "name": "windpatterns.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/windpatterns/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/windpatterns.json"
+    },
+    {
+      "name": "characterclasses.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/characterclasses.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/characterclasses.json"
+    },
+    {
+      "name": "colormaps.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/colormaps.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/colormaps.json"
+    },
+    {
+      "name": "general.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/general.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/general.json"
+    },
+    {
+      "name": "remaps.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/remaps.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/remaps.json"
+    },
+    {
+      "name": "traderaccessories.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/traderaccessories.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/traderaccessories.json"
+    },
+    {
+      "name": "traits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/traits.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/traits.json"
+    },
+    {
+      "name": "weather.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/config/weather.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weather.json"
+    },
+    {
+      "name": "dialog.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/dialog/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/dialog.json"
+    },
+    {
+      "name": "entities.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/entities/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/entities.json"
+    },
+    {
+      "name": "itemtypes.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/itemtypes/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/itemtypes.json"
+    },
+    {
+      "name": "lang.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/lang/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/lang.json"
+    },
+    {
+      "name": "patches.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/patches/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/patches.json"
+    },
+    {
+      "name": "alloy.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/alloy/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/alloy.json"
+    },
+    {
+      "name": "barrel.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/barrel/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/barrel.json"
+    },
+    {
+      "name": "clayforming.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/clayforming/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/clayforming.json"
+    },
+    {
+      "name": "cooking.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/cooking/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/cooking.json"
+    },
+    {
+      "name": "grid.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/grid/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/grid.json"
+    },
+    {
+      "name": "knapping.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/knapping/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/knapping.json"
+    },
+    {
+      "name": "smithing.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/recipes/smithing/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/smithing.json"
+    },
+    {
+      "name": "deposits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/deposits/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/deposits.json"
+    },
+    {
+      "name": "schematics.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/schematics/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/schematics.json"
+    },
+    {
+      "name": "treegen.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/treegen/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/treegen.json"
+    },
+    {
+      "name": "blocklayers.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/blocklayers.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/blocklayers.json"
+    },
+    {
+      "name": "blockpatches.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/blockpatches.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/blockpatches.json"
+    },
+    {
+      "name": "deposits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/deposits.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/deposits.json"
+    },
+    {
+      "name": "geologicprovinces.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/geologicprovinces.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/geologicprovinces.json"
+    },
+    {
+      "name": "global.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/global.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/global.json"
+    },
+    {
+      "name": "landforms.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/landforms.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/landforms.json"
+    },
+    {
+      "name": "layers.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/layers.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/layers.json"
+    },
+    {
+      "name": "rockstrata.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/rockstrata.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/rockstrata.json"
+    },
+    {
+      "name": "structures.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/structures.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/structures.json"
+    },
+    {
+      "name": "treengenproperties.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/treengenproperties.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/treengenproperties.json"
+    },
+    {
+      "name": "villages.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/villages.json"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/villages.json"
+    },
+    {
+      "name": "worldproperties.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/*/worldgen/worldproperties/**"
+      ],
+      "url": "https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/worldproperties.json"
+    }
+  ]
+}

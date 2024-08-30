@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BlockSchematic",
+  "type": "object",
+  "properties": {
+    "gameVersion": {
+      "type": "string"
+    },
+    "sizeX": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sizeY": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sizeZ": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "blockCodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "itemCodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "indices": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "blockIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "decorIndices": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "decorIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "blockEntities": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "replaceMode": {
+      "$ref": "#/definitions/EnumReplaceMode"
+    },
+    "entranceRotation": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "definitions": {
+    "EnumReplaceMode": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Replaceable",
+        "ReplaceAll",
+        "ReplaceAllNoAir",
+        "ReplaceOnlyAir"
+      ],
+      "enum": [
+        "replaceable",
+        "replaceAll",
+        "replaceAllNoAir",
+        "replaceOnlyAir"
+      ]
+    }
+  }
+}

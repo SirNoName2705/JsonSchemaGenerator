@@ -1,0 +1,274 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TreeGenConfig",
+  "type": "object",
+  "properties": {
+    "yOffset": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sizeMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "sizeVar": {
+      "$ref": "#/definitions/NatFloat"
+    },
+    "heightMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "trunks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeGenTrunk"
+      }
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeGenBranch"
+      }
+    },
+    "treeBlocks": {
+      "$ref": "#/definitions/TreeGenBlocks"
+    },
+    "treetype": {
+      "$ref": "#/definitions/EnumTreeType"
+    }
+  },
+  "definitions": {
+    "NatFloat": {
+      "type": "object",
+      "description": "A more natural random number generator (nature usually doesn't grow by the exact same numbers nor does it completely randomly)",
+      "properties": {
+        "offset": {
+          "type": "number",
+          "format": "float"
+        },
+        "avg": {
+          "type": "number",
+          "format": "float"
+        },
+        "var": {
+          "type": "number",
+          "format": "float"
+        },
+        "dist": {
+          "$ref": "#/definitions/EnumDistribution"
+        }
+      }
+    },
+    "EnumDistribution": {
+      "type": "string",
+      "description": "The distribution of the random numbers ",
+      "x-enumNames": [
+        "UNIFORM",
+        "TRIANGLE",
+        "GAUSSIAN",
+        "NARROWGAUSSIAN",
+        "INVERSEGAUSSIAN",
+        "NARROWINVERSEGAUSSIAN",
+        "INVEXP",
+        "STRONGINVEXP",
+        "STRONGERINVEXP",
+        "DIRAC",
+        "VERYNARROWGAUSSIAN"
+      ],
+      "enum": [
+        "uniform",
+        "triangle",
+        "gaussian",
+        "narrowgaussian",
+        "inversegaussian",
+        "narrowinversegaussian",
+        "invexp",
+        "stronginvexp",
+        "strongerinvexp",
+        "dirac",
+        "verynarrowgaussian"
+      ]
+    },
+    "TreeGenTrunk": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/TreeGenBranch"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dx": {
+              "type": "number",
+              "format": "float"
+            },
+            "dz": {
+              "type": "number",
+              "format": "float"
+            },
+            "probability": {
+              "type": "number",
+              "format": "float"
+            },
+            "segment": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      ]
+    },
+    "TreeGenBranch": {
+      "type": "object",
+      "properties": {
+        "inherit": {
+          "$ref": "#/definitions/Inheritance"
+        },
+        "widthMultiplier": {
+          "type": "number",
+          "format": "float"
+        },
+        "widthloss": {
+          "type": "number",
+          "format": "float"
+        },
+        "randomWidthLoss": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "widthlossCurve": {
+          "type": "number",
+          "format": "float"
+        },
+        "dieAt": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "gravityDrag": {
+          "type": "number",
+          "format": "float"
+        },
+        "angleVert": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "angleHori": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchWidthLossMul": {
+          "type": "number",
+          "format": "float"
+        },
+        "angleVertEvolve": {
+          "$ref": "#/definitions/EvolvingNatFloat"
+        },
+        "angleHoriEvolve": {
+          "$ref": "#/definitions/EvolvingNatFloat"
+        },
+        "noLogs": {
+          "type": "boolean"
+        },
+        "branchStart": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchSpacing": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchVerticalAngle": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchHorizontalAngle": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchWidthMultiplier": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchWidthMultiplierEvolve": {
+          "$ref": "#/definitions/EvolvingNatFloat"
+        },
+        "branchQuantity": {
+          "$ref": "#/definitions/NatFloat"
+        },
+        "branchQuantityEvolve": {
+          "$ref": "#/definitions/EvolvingNatFloat"
+        }
+      }
+    },
+    "Inheritance": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "skip": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "EvolvingNatFloat": {
+      "type": "object",
+      "description": "A number generator whose return value changes over time, parametrized by a transform function and some constants"
+    },
+    "TreeGenBlocks": {
+      "type": "object",
+      "properties": {
+        "logBlockCode": {
+          "type": "string"
+        },
+        "otherLogBlockCode": {
+          "type": "string"
+        },
+        "otherLogChance": {
+          "type": "number",
+          "format": "double"
+        },
+        "leavesBlockCode": {
+          "type": "string"
+        },
+        "leavesBranchyBlockCode": {
+          "type": "string"
+        },
+        "vinesBlockCode": {
+          "type": "string"
+        },
+        "mossDecorCode": {
+          "type": "string"
+        },
+        "vinesEndBlockCode": {
+          "type": "string"
+        },
+        "trunkSegmentBase": {
+          "type": "string"
+        },
+        "trunkSegmentVariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "leavesLevels": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "EnumTreeType": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Any",
+        "Decidious",
+        "Conifer",
+        "Tropical",
+        "Acacia"
+      ],
+      "enum": [
+        "any",
+        "decidious",
+        "conifer",
+        "tropical",
+        "acacia"
+      ]
+    }
+  }
+}
