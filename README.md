@@ -1,5 +1,10 @@
 # Visual Studio 2022:
 There should be an Option somewhere in the ide to add a custom json catalog.
+Tools>Options>Json>Schema
+Then click add new one in the upper left.
+Copy this link: `https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/vs_schema_catalog.json`
+and paste it in the settings.
+Save and restart the ide.
 
 ## Workaround
 - https://devblogs.microsoft.com/dotnet/intellisense-for-json-schema-in-the-json-editor/
