@@ -8,7 +8,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="modinfo" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/modinfo.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/modinfo.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -27,7 +27,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="blocktypes" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/blocktypes.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/blocktypes.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -46,7 +46,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="handbook" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/handbook.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/handbook.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -65,7 +65,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="lore" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/lore.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/lore.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -84,7 +84,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="weatherevents" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weatherevents.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/weatherevents.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -103,7 +103,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="weatherpatterns" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weatherpatterns.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/weatherpatterns.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -122,7 +122,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="windpatterns" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/windpatterns.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/windpatterns.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -141,7 +141,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="characterclasses" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/characterclasses.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/characterclasses.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -160,7 +160,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="colormaps" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/colormaps.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/colormaps.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -179,7 +179,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="general" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/general.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/general.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -198,7 +198,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="remaps" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/remaps.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/remaps.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -217,7 +217,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="traderaccessories" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/traderaccessories.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/traderaccessories.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -236,7 +236,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="traits" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/traits.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/traits.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -255,7 +255,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="weather" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/config/weather.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/config/weather.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -274,7 +274,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="dialog" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/dialog.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/dialog.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -293,7 +293,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="entities" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/entities.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/entities.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -312,7 +312,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="itemtypes" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/itemtypes.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/itemtypes.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -331,7 +331,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="lang" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/lang.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/lang.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -350,7 +350,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="patches" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/patches.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/patches.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -369,7 +369,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="alloy" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/alloy.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/alloy.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -388,7 +388,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="barrel" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/barrel.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/barrel.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -407,7 +407,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="clayforming" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/clayforming.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/clayforming.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -426,7 +426,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="cooking" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/cooking.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/cooking.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -445,7 +445,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="grid" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/grid.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/grid.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -464,7 +464,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="knapping" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/knapping.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/knapping.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -483,7 +483,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="smithing" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/recipes/smithing.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/recipes/smithing.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -502,7 +502,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="deposits" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/deposits.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/deposits.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -521,7 +521,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="schematics" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/schematics.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/schematics.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -540,7 +540,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="treegen" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/treegen.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/treegen.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -559,7 +559,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="blocklayers" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/blocklayers.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/blocklayers.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -578,7 +578,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="blockpatches" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/blockpatches.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/blockpatches.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -597,7 +597,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="deposits" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/deposits.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/deposits.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -616,7 +616,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="geologicprovinces" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/geologicprovinces.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/geologicprovinces.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -635,7 +635,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="global" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/global.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/global.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -654,7 +654,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="landforms" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/landforms.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/landforms.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -673,7 +673,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="layers" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/layers.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/layers.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -692,7 +692,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="rockstrata" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/rockstrata.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/rockstrata.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -711,7 +711,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="structures" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/structures.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/structures.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -730,7 +730,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="treengenproperties" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/treengenproperties.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/treengenproperties.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -749,7 +749,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="villages" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/villages.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/villages.json" />
               <option name="patterns">
                 <list>
                   <Item>
@@ -768,7 +768,7 @@
               <option name="generatedName" value="New Schema" />
               <option name="name" value="worldproperties" />
               <option name="schemaVersion" value="JSON Schema version 4" />
-              <option name="relativePathToSchema" value="https://github.com/darkhekromant/JsonSchemaGenerator/blob/master/.schemas/game/worldgen/worldproperties.json" />
+              <option name="relativePathToSchema" value="https://github.com/SirNoName2705/JsonSchemaGenerator/tree/master/SchemaDirectOutput/.schemas/game/worldgen/worldproperties.json" />
               <option name="patterns">
                 <list>
                   <Item>
