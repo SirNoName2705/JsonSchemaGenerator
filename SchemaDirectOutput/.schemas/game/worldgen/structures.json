@@ -373,7 +373,6 @@
     },
     "WorldGenStructureBase": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "code": {
           "type": "string"

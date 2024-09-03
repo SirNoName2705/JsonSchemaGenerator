@@ -8,243 +8,249 @@
     },
     {
       "fileMatch": [
-        "**/assets/*/blocktypes/**"
+        "**/assets/**/blocktypes/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/blocktypes.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/handbook/**"
+        "**/assets/**/config/handbook/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/handbook.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/lore/**"
+        "**/assets/**/config/lore/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/lore.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/weatherevents/**"
+        "**/assets/**/config/weatherevents/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/weatherevents.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/weatherpatterns/**"
+        "**/assets/**/config/weatherpatterns/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/weatherpatterns.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/windpatterns/**"
+        "**/assets/**/config/windpatterns/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/windpatterns.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/characterclasses.json"
+        "**/assets/**/config/characterclasses.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/characterclasses.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/colormaps.json"
+        "**/assets/**/config/colormaps.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/colormaps.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/general.json"
+        "**/assets/**/config/general.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/general.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/remaps.json"
+        "**/assets/**/config/remaps.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/remaps.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/traderaccessories.json"
+        "**/assets/**/config/traderaccessories.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/traderaccessories.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/traits.json"
+        "**/assets/**/config/traits.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/traits.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/config/weather.json"
+        "**/assets/**/config/weather.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/config/weather.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/dialog/**"
+        "**/assets/**/dialog/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/dialog.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/entities/**"
+        "**/assets/**/entities/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/entities.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/itemtypes/**"
+        "**/assets/**/itemtypes/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/itemtypes.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/lang/**"
+        "**/assets/**/lang/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/lang.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/patches/**"
+        "**/assets/**/patches/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/patches.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/alloy/**"
+        "**/assets/**/recipes/alloy/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/alloy.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/barrel/**"
+        "**/assets/**/recipes/barrel/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/barrel.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/clayforming/**"
+        "**/assets/**/recipes/clayforming/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/clayforming.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/cooking/**"
+        "**/assets/**/recipes/cooking/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/cooking.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/grid/**"
+        "**/assets/**/recipes/grid/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/grid.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/knapping/**"
+        "**/assets/**/recipes/knapping/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/knapping.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/recipes/smithing/**"
+        "**/assets/**/recipes/smithing/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/recipes/smithing.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/deposits/**"
+        "**/assets/**/worldgen/deposits/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/deposits.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/schematics/**"
+        "**/assets/**/worldgen/schematics/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/schematics.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/treegen/**"
+        "**/assets/**/worldgen/treegen/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/treegen.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/blocklayers.json"
+        "**/assets/**/worldgen/blocklayers.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/blocklayers.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/blockpatches.json"
+        "**/assets/**/worldgen/blockpatches.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/blockpatches.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/deposits.json"
+        "**/assets/**/worldgen/deposits.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/deposits.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/geologicprovinces.json"
+        "**/assets/**/worldgen/geologicprovinces.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/geologicprovinces.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/global.json"
+        "**/assets/**/worldgen/global.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/global.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/landforms.json"
+        "**/assets/**/worldgen/landforms.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/landforms.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/layers.json"
+        "**/assets/**/worldgen/layers.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/layers.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/rockstrata.json"
+        "**/assets/**/worldgen/rockstrata.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/rockstrata.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/structures.json"
+        "**/assets/**/worldgen/structures.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/structures.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/treengenproperties.json"
+        "**/assets/**/worldgen/treengenproperties.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/treengenproperties.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/villages.json"
+        "**/assets/**/worldgen/villages.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/villages.json"
     },
     {
       "fileMatch": [
-        "**/assets/*/worldgen/worldproperties/**"
+        "**/assets/**/worldgen/worldproperties/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/worldproperties.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/test/Block/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/test/Block.json"
     }
   ]
 }

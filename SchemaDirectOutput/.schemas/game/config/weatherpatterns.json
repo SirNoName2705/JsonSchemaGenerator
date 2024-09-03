@@ -172,7 +172,6 @@
     },
     "ConditionalPatternConfig": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "weightFunction": {
           "$ref": "#/definitions/EnumChanceFunction"

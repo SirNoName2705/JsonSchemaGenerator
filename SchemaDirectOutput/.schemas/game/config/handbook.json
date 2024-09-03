@@ -8,7 +8,6 @@
   "definitions": {
     "GuiHandbookPage": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "pageNumber": {
           "type": "integer",

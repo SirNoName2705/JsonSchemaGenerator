@@ -7,13 +7,15 @@
       "type": "string"
     },
     "Variants": {
-      "$ref": "#/definitions/TOf"
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/T"
+      }
     }
   },
   "definitions": {
-    "TOf": {
-      "type": "array",
-      "items": {}
+    "T": {
+      "type": "object"
     }
   }
 }

@@ -45,18 +45,6 @@
         },
         "value": {
           "$ref": "#/definitions/JsonObject"
-        },
-        "sideType": {
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Use Side instead",
-          "oneOf": [
-            {
-              "type": "null"
-            },
-            {
-              "$ref": "#/definitions/EnumAppSide"
-            }
-          ]
         }
       }
     },

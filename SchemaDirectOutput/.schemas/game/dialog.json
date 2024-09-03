@@ -247,14 +247,12 @@
           "$ref": "#/definitions/Delegate"
         },
         {
-          "type": "object",
-          "x-abstract": true
+          "type": "object"
         }
       ]
     },
     "Delegate": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "target": {
           "oneOf": [
@@ -276,7 +274,6 @@
         },
         {
           "type": "object",
-          "x-abstract": true,
           "properties": {
             "memberType": {
               "$ref": "#/definitions/MemberTypes"
@@ -419,7 +416,6 @@
     },
     "MemberInfo": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "module": {
           "$ref": "#/definitions/Module"
@@ -441,7 +437,6 @@
     },
     "Module": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "assembly": {
           "$ref": "#/definitions/Assembly"
@@ -480,7 +475,6 @@
     },
     "Assembly": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "definedTypes": {
           "type": "array",
@@ -493,14 +487,6 @@
           "items": {
             "type": "string"
           }
-        },
-        "codeBase": {
-          "type": [
-            "null",
-            "string"
-          ],
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Assembly.CodeBase and Assembly.EscapedCodeBase are only included for .NET Framework compatibility. Use Assembly.Location."
         },
         "entryPoint": {
           "oneOf": [
@@ -542,11 +528,6 @@
             "$ref": "#/definitions/CustomAttributeData"
           }
         },
-        "escapedCodeBase": {
-          "type": "string",
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Assembly.CodeBase and Assembly.EscapedCodeBase are only included for .NET Framework compatibility. Use Assembly.Location."
-        },
         "manifestModule": {
           "$ref": "#/definitions/Module"
         },
@@ -555,11 +536,6 @@
           "items": {
             "$ref": "#/definitions/Module"
           }
-        },
-        "globalAssemblyCache": {
-          "type": "boolean",
-          "x-deprecated": true,
-          "x-deprecatedMessage": "The Global Assembly Cache is not supported."
         },
         "hostContext": {
           "type": "integer",
@@ -600,7 +576,6 @@
         },
         {
           "type": "object",
-          "x-abstract": true,
           "properties": {
             "memberType": {
               "$ref": "#/definitions/MemberTypes"
@@ -616,7 +591,6 @@
         },
         {
           "type": "object",
-          "x-abstract": true,
           "properties": {
             "methodImplementationFlags": {
               "$ref": "#/definitions/MethodImplAttributes"

@@ -736,15 +736,6 @@
                   "$ref": "#/definitions/EnumGetClimateMode"
                 }
               ]
-            },
-            "groupSize": {
-              "x-deprecated": true,
-              "x-deprecatedMessage": "Use HerdSize instead",
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/NatFloat"
-                }
-              ]
             }
           }
         }
@@ -1049,7 +1040,6 @@
         {
           "type": "object",
           "description": "Contains all properties shared by Blocks and Items",
-          "x-abstract": true,
           "properties": {
             "matterState": {
               "description": "Liquids are handled and rendered differently than solid blocks.",
@@ -1305,12 +1295,6 @@
             "isMissing": {
               "type": "boolean",
               "description": "This value is set the the BlockId or ItemId-Remapper if it encounters a block/item in the savegame,\nbut no longer exists as a loaded block/item"
-            },
-            "miningTier": {
-              "type": "integer",
-              "format": "int32",
-              "x-deprecated": true,
-              "x-deprecatedMessage": "Use tool tier"
             }
           }
         }
@@ -1670,12 +1654,6 @@
             }
           ]
         },
-        "saturation": {
-          "type": "number",
-          "format": "float",
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Use Satiety instead."
-        },
         "intoxication": {
           "type": "number",
           "format": "float"
@@ -1778,15 +1756,6 @@
         },
         "groundStack": {
           "description": "If set, the block/item is grindable in a quern and this is the resulting itemstack once the grinding time is over.",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/JsonItemStack"
-            }
-          ]
-        },
-        "grindedStack": {
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Use GroundStack instead",
           "oneOf": [
             {
               "$ref": "#/definitions/JsonItemStack"
@@ -2062,7 +2031,6 @@
     },
     "CollectibleBehavior": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "collObj": {
           "description": "The collectible object (item or block) for this behavior instance.",
@@ -2085,27 +2053,24 @@
     "RegistryObject": {
       "type": "object",
       "description": "A registerable object with variants, i.e. an item, a block or an entity",
-      "x-abstract": true,
       "properties": {
         "code": {
           "type": "string",
           "description": "A unique domain + code of the object. Must be globally unique for all items / all blocks / all entities."
         },
         "variantStrict": {
+          "type": "array",
           "description": "Variant values as resolved from blocktype/itemtype.  NOT set for entities - use entity.Properties.VariantStrict instead.",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/OrderedDictionaryOfStringAndString"
-            }
-          ]
+          "items": {
+            "$ref": "#/definitions/KeyValuePairOfStringAndString"
+          }
         },
         "variant": {
+          "type": "array",
           "description": "Variant values as resolved from blocktype/itemtype. Will not throw an null pointer exception when the key does not exist, but return null instead. NOT set for entities - use entity.Properties.Variant instead",
-          "oneOf": [
-            {
-              "$ref": "#/definitions/RelaxedReadOnlyDictionaryOfStringAndString"
-            }
-          ]
+          "items": {
+            "$ref": "#/definitions/KeyValuePairOfStringAndString"
+          }
         },
         "class": {
           "type": "string",
@@ -2113,71 +2078,14 @@
         }
       }
     },
-    "OrderedDictionaryOfStringAndString": {
-      "type": "object",
-      "description": "Same as your normal C# Dictionary but ensures that the order in which the items are added is remembered. That way you can iterate over the dictionary with the insert order intact or set/get elements by index.\nTaken from http://www.codeproject.com/Articles/18615/OrderedDictionary-T-A-generic-implementation-of-IO\nPlease be aware that this is not a very efficient implementation, recommed use only for small sets of data.",
-      "properties": {
-        "InternalDictionary": {
-          "type": "object",
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "Item": {
-          "type": "string"
-        },
-        "Count": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "Keys": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "ValuesOrdered": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "Values": {
-          "type": "array",
-          "description": "Important: these are NOT ordered.   The ordered values is obtained by .ValuesOrdered",
-          "items": {
-            "type": "string"
-          }
-        },
-        "IsReadOnly": {
-          "type": "boolean"
-        }
-      }
-    },
-    "RelaxedReadOnlyDictionaryOfStringAndString": {
+    "KeyValuePairOfStringAndString": {
       "type": "object",
       "properties": {
-        "Item": {
+        "key": {
           "type": "string"
         },
-        "Keys": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "Values": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "Count": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "IsReadOnly": {
-          "type": "boolean"
+        "value": {
+          "type": "string"
         }
       }
     },
@@ -3140,14 +3048,6 @@
           "description": "The time this MeshData most recently entered the recycling system; the oldest may be garbage collected",
           "format": "int64"
         },
-        "renderPasses": {
-          "type": "array",
-          "x-deprecated": true,
-          "x-deprecatedMessage": "Use RenderPassesAndExtraBits instead",
-          "items": {
-            "type": "integer"
-          }
-        },
         "xyzCount": {
           "type": "integer",
           "description": "returns VerticesCount * 3",
@@ -3189,7 +3089,6 @@
     "CustomMeshDataPartOfSingle": {
       "type": "object",
       "description": "Holds arbitrary mesh data for meshes to be used in a shader",
-      "x-abstract": true,
       "properties": {
         "values": {
           "type": "array",
@@ -3283,7 +3182,6 @@
     "CustomMeshDataPartOfInteger": {
       "type": "object",
       "description": "Holds arbitrary mesh data for meshes to be used in a shader",
-      "x-abstract": true,
       "properties": {
         "values": {
           "type": "array",
@@ -3363,7 +3261,6 @@
     "CustomMeshDataPartOfShort": {
       "type": "object",
       "description": "Holds arbitrary mesh data for meshes to be used in a shader",
-      "x-abstract": true,
       "properties": {
         "values": {
           "type": "array",
@@ -3442,7 +3339,6 @@
     "CustomMeshDataPartOfByte": {
       "type": "object",
       "description": "Holds arbitrary mesh data for meshes to be used in a shader",
-      "x-abstract": true,
       "properties": {
         "values": {
           "type": "string",
@@ -3775,7 +3671,6 @@
         {
           "type": "object",
           "description": "Allows for definitions of behaviors of a block that can be applied to any block",
-          "x-abstract": true,
           "properties": {
             "block": {
               "description": "The block for this behavior instance.",
@@ -3881,7 +3776,6 @@
     },
     "CropBehavior": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "block": {
           "$ref": "#/definitions/Block"
@@ -3890,7 +3784,6 @@
     },
     "RegistryObjectType": {
       "type": "object",
-      "x-abstract": true,
       "properties": {
         "interactions": {
           "type": "array",
@@ -4021,11 +3914,6 @@
         },
         "canClimbAnywhere": {
           "type": "boolean"
-        },
-        "fallDamage": {
-          "type": "boolean",
-          "x-deprecated": true,
-          "x-deprecatedMessage": "This will be removed in 1.20. Instead set FallDamageMultiplier to 0.0 for no fall damage"
         },
         "fallDamageMultiplier": {
           "type": "number",

@@ -260,7 +260,7 @@
           "$ref": "#/definitions/AttachmentAreas"
         },
         "toolTransforms": {
-          "$ref": "#/definitions/Attributes"
+          "$ref": "#/definitions/ToolTransforms"
         },
         "modelConfigs": {
           "$ref": "#/definitions/ModelConfigs"
@@ -12886,6 +12886,9 @@
     "Anonymous607": {
       "type": "string"
     },
+    "ToolTransforms": {
+      "type": "object"
+    },
     "ModelConfigs": {
       "type": "object",
       "properties": {
@@ -12915,13 +12918,13 @@
         "buildStages": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous614"
+            "$ref": "#/definitions/Anonymous615"
           }
         },
         "buildMatCodes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous615"
+            "$ref": "#/definitions/Anonymous616"
           }
         }
       }
@@ -12932,9 +12935,6 @@
     "BuildMatCode": {
       "type": "string"
     },
-    "Anonymous612": {
-      "type": "string"
-    },
     "Anonymous613": {
       "type": "string"
     },
@@ -12942,6 +12942,9 @@
       "type": "string"
     },
     "Anonymous615": {
+      "type": "string"
+    },
+    "Anonymous616": {
       "type": "string"
     },
     "BuildMats": {
@@ -13080,7 +13083,7 @@
         }
       }
     },
-    "Anonymous624": {
+    "Anonymous625": {
       "type": "object",
       "properties": {
         "symboltop": {
@@ -13100,7 +13103,7 @@
         }
       }
     },
-    "Anonymous625": {
+    "Anonymous626": {
       "type": "object",
       "properties": {
         "symboltop": {
@@ -13130,7 +13133,7 @@
           "type": "string"
         },
         "textures": {
-          "$ref": "#/definitions/Anonymous624"
+          "$ref": "#/definitions/Anonymous625"
         }
       }
     },
@@ -13151,7 +13154,7 @@
         }
       }
     },
-    "Anonymous628": {
+    "Anonymous629": {
       "type": "object",
       "properties": {
         "potential": {
@@ -13159,7 +13162,7 @@
         }
       }
     },
-    "Anonymous629": {
+    "Anonymous630": {
       "type": "object",
       "properties": {
         "category": {
@@ -14295,10 +14298,10 @@
         }
       }
     },
-    "Anonymous741": {
+    "Anonymous742": {
       "type": "string"
     },
-    "Anonymous742": {
+    "Anonymous743": {
       "type": "string"
     },
     "*Food": {
@@ -14319,16 +14322,13 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous741"
+            "$ref": "#/definitions/Anonymous742"
           }
         },
         "minQuanity": {
           "type": "integer"
         }
       }
-    },
-    "Anonymous744": {
-      "type": "string"
     },
     "Anonymous745": {
       "type": "string"
@@ -14360,6 +14360,9 @@
     "Anonymous754": {
       "type": "string"
     },
+    "Anonymous755": {
+      "type": "string"
+    },
     "*Forage": {
       "type": "object",
       "properties": {
@@ -14378,13 +14381,10 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous744"
+            "$ref": "#/definitions/Anonymous745"
           }
         }
       }
-    },
-    "Anonymous756": {
-      "type": "string"
     },
     "Anonymous757": {
       "type": "string"
@@ -14393,6 +14393,9 @@
       "type": "string"
     },
     "Anonymous759": {
+      "type": "string"
+    },
+    "Anonymous760": {
       "type": "string"
     },
     "*Ore": {
@@ -14413,13 +14416,10 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous756"
+            "$ref": "#/definitions/Anonymous757"
           }
         }
       }
-    },
-    "Anonymous761": {
-      "type": "string"
     },
     "Anonymous762": {
       "type": "string"
@@ -14448,6 +14448,9 @@
     "Anonymous770": {
       "type": "string"
     },
+    "Anonymous771": {
+      "type": "string"
+    },
     "*Tool": {
       "type": "object",
       "properties": {
@@ -14466,13 +14469,10 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous761"
+            "$ref": "#/definitions/Anonymous762"
           }
         }
       }
-    },
-    "Anonymous772": {
-      "type": "string"
     },
     "Anonymous773": {
       "type": "string"
@@ -14495,6 +14495,9 @@
     "Anonymous779": {
       "type": "string"
     },
+    "Anonymous780": {
+      "type": "string"
+    },
     "*Farming": {
       "type": "object",
       "properties": {
@@ -14513,13 +14516,10 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous772"
+            "$ref": "#/definitions/Anonymous773"
           }
         }
       }
-    },
-    "Anonymous781": {
-      "type": "string"
     },
     "Anonymous782": {
       "type": "string"
@@ -14551,6 +14551,9 @@
     "Anonymous791": {
       "type": "string"
     },
+    "Anonymous792": {
+      "type": "string"
+    },
     "*Arcticsupplie": {
       "type": "object",
       "properties": {
@@ -14569,7 +14572,7 @@
         "codes": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous781"
+            "$ref": "#/definitions/Anonymous782"
           }
         }
       }
@@ -15243,7 +15246,7 @@
         "fruitStacks": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous820"
+            "$ref": "#/definitions/Anonymous821"
           }
         },
         "enterDormancyTemp": {
@@ -15291,20 +15294,6 @@
         }
       }
     },
-    "Anonymous812": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "code": {
-          "type": "string"
-        },
-        "quantity": {
-          "$ref": "#/definitions/FruitingDays"
-        }
-      }
-    },
     "Anonymous813": {
       "type": "object",
       "properties": {
@@ -15320,6 +15309,20 @@
       }
     },
     "Anonymous814": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/definitions/FruitingDays"
+        }
+      }
+    },
+    "Anonymous815": {
       "type": "object",
       "properties": {
         "type": {
@@ -15354,7 +15357,7 @@
         "fruitStacks": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous824"
+            "$ref": "#/definitions/Anonymous825"
           }
         },
         "looseLeavesBelowTemp": {
@@ -15371,20 +15374,6 @@
         },
         "cuttingGraftChance": {
           "type": "number"
-        }
-      }
-    },
-    "Anonymous816": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "code": {
-          "type": "string"
-        },
-        "quantity": {
-          "$ref": "#/definitions/FruitingDays"
         }
       }
     },
@@ -15444,6 +15433,20 @@
         }
       }
     },
+    "Anonymous821": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/definitions/FruitingDays"
+        }
+      }
+    },
     "Breadfruit": {
       "type": "object",
       "properties": {
@@ -15468,7 +15471,7 @@
         "fruitStacks": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous822"
+            "$ref": "#/definitions/Anonymous823"
           }
         },
         "looseLeavesBelowTemp": {
@@ -15488,20 +15491,6 @@
         }
       }
     },
-    "Anonymous822": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "code": {
-          "type": "string"
-        },
-        "quantity": {
-          "$ref": "#/definitions/FruitingDays"
-        }
-      }
-    },
     "Anonymous823": {
       "type": "object",
       "properties": {
@@ -15517,6 +15506,20 @@
       }
     },
     "Anonymous824": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/definitions/FruitingDays"
+        }
+      }
+    },
+    "Anonymous825": {
       "type": "object",
       "properties": {
         "type": {
@@ -15866,19 +15869,19 @@
           "$ref": "#/definitions/Base"
         },
         "pinkapple": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "redapple": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "yellowapple": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "cherry": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "mango": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "olive": {
           "$ref": "#/definitions/Olive"
@@ -15887,19 +15890,19 @@
           "$ref": "#/definitions/Olive"
         },
         "peach": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "pear": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "breadfruit": {
-          "$ref": "#/definitions/Anonymous844"
+          "$ref": "#/definitions/Anonymous845"
         },
         "lychee": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         },
         "pomegranate": {
-          "$ref": "#/definitions/Anonymous842"
+          "$ref": "#/definitions/Anonymous843"
         }
       }
     },
@@ -15907,7 +15910,7 @@
       "type": "object",
       "properties": {
         "textures": {
-          "$ref": "#/definitions/Anonymous841"
+          "$ref": "#/definitions/Anonymous842"
         },
         "leafParticlesTexture": {
           "$ref": "#/definitions/Mossy"
@@ -15917,7 +15920,7 @@
         }
       }
     },
-    "Anonymous841": {
+    "Anonymous842": {
       "type": "object",
       "properties": {
         "smallleaves-flowering": {
@@ -15964,7 +15967,7 @@
         }
       }
     },
-    "Anonymous842": {
+    "Anonymous843": {
       "type": "object",
       "properties": {
         "texturesBasePath": {
@@ -15986,7 +15989,7 @@
         }
       }
     },
-    "Anonymous844": {
+    "Anonymous845": {
       "type": "object",
       "properties": {
         "texturesBasePath": {
@@ -16226,7 +16229,7 @@
         "chute-elbow-down-*": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous868"
+            "$ref": "#/definitions/Anonymous869"
           }
         },
         "chute-elbow-up-*": {
@@ -16238,25 +16241,25 @@
         "chute-3way-down-west": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous889"
+            "$ref": "#/definitions/Anonymous890"
           }
         },
         "chute-3way-down-south": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous890"
+            "$ref": "#/definitions/Anonymous891"
           }
         },
         "chute-3way-down-east": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous891"
+            "$ref": "#/definitions/Anonymous892"
           }
         },
         "chute-3way-down-north": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous892"
+            "$ref": "#/definitions/Anonymous893"
           }
         },
         "chute-3way-up-*": {
@@ -16268,13 +16271,13 @@
         "chute-t-ns": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous893"
+            "$ref": "#/definitions/Anonymous894"
           }
         },
         "chute-t-we": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous894"
+            "$ref": "#/definitions/Anonymous895"
           }
         },
         "chute-t-ud-*": {
@@ -16286,37 +16289,37 @@
         "chute-straight-ud": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous878"
+            "$ref": "#/definitions/Anonymous879"
           }
         },
         "chute-straight-ns": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous895"
+            "$ref": "#/definitions/Anonymous896"
           }
         },
         "chute-straight-we": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous896"
+            "$ref": "#/definitions/Anonymous897"
           }
         },
         "*-ns": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous897"
+            "$ref": "#/definitions/Anonymous898"
           }
         },
         "*-we": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous898"
+            "$ref": "#/definitions/Anonymous899"
           }
         },
         "*-ground": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous899"
+            "$ref": "#/definitions/Anonymous900"
           }
         },
         "*-straight": {
@@ -16328,30 +16331,30 @@
         "*-ported-north": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous900"
+            "$ref": "#/definitions/Anonymous901"
           }
         },
         "*-ported-east": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous901"
+            "$ref": "#/definitions/Anonymous902"
           }
         },
         "*-ported-south": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous902"
+            "$ref": "#/definitions/Anonymous903"
           }
         },
         "*-ported-west": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Anonymous903"
+            "$ref": "#/definitions/Anonymous904"
           }
         }
       }
     },
-    "Anonymous868": {
+    "Anonymous869": {
       "type": "string"
     },
     "ChuteElbowUp*": {
@@ -16372,16 +16375,16 @@
     "Chute3wayUp*": {
       "type": "string"
     },
-    "Anonymous875": {
+    "Anonymous876": {
       "type": "string"
     },
-    "Anonymous876": {
+    "Anonymous877": {
       "type": "string"
     },
     "ChuteTUd*": {
       "type": "string"
     },
-    "Anonymous878": {
+    "Anonymous879": {
       "type": "string"
     },
     "ChuteStraightN": {
@@ -16390,10 +16393,10 @@
     "ChuteStraightWe": {
       "type": "string"
     },
-    "Anonymous881": {
+    "Anonymous882": {
       "type": "string"
     },
-    "Anonymous882": {
+    "Anonymous883": {
       "type": "string"
     },
     "*Ground": {
@@ -16412,9 +16415,6 @@
       "type": "string"
     },
     "*PortedWest": {
-      "type": "string"
-    },
-    "Anonymous889": {
       "type": "string"
     },
     "Anonymous890": {
@@ -16457,6 +16457,9 @@
       "type": "string"
     },
     "Anonymous903": {
+      "type": "string"
+    },
+    "Anonymous904": {
       "type": "string"
     },
     "WidthByType": {
@@ -16654,7 +16657,7 @@
           "$ref": "#/definitions/SmallContainer"
         },
         "wood": {
-          "$ref": "#/definitions/Anonymous920"
+          "$ref": "#/definitions/Anonymous921"
         }
       }
     },
@@ -16672,7 +16675,7 @@
         }
       }
     },
-    "Anonymous920": {
+    "Anonymous921": {
       "type": "object",
       "properties": {
         "texture": {
