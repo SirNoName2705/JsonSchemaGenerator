@@ -245,12 +245,6 @@
         "**/assets/**/worldgen/worldproperties/**"
       ],
       "url": "./.schemas/game/worldgen/worldproperties.json"
-    },
-    {
-      "fileMatch": [
-        "**/assets/**/test/Block/**"
-      ],
-      "url": "./.schemas/game/test/Block.json"
     }
   ]
 }

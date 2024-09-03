@@ -329,14 +329,6 @@
         "**/assets/**/worldgen/worldproperties/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/worldgen/worldproperties.json"
-    },
-    {
-      "name": "Block.json",
-      "description": "",
-      "fileMatch": [
-        "**/assets/**/test/Block/**"
-      ],
-      "url": "https://raw.githubusercontent.com/SirNoName2705/JsonSchemaGenerator/master/SchemaDirectOutput/.schemas/game/test/Block.json"
     }
   ]
 }
